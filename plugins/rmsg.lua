@@ -3,8 +3,8 @@ local function history(extra, suc, result)
     delete_msg(result[i].id, ok_cb, false)
   end
   if tonumber(extra.con) == #result then
-    send_msg(extra.chatid, '"'..#result..'" پیام اخیر سوپر گروه حذف شد', ok_cb, false)
-  else
+send_msg(extra.chatid, '"'..#result..'" پیامهایی که گفتی پاک شد', ok_cb, false)
+else
     send_msg(extra.chatid, 'تعداد پیام مورد نظر شما پاک شد', ok_cb, false)
   end
 end
